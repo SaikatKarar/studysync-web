@@ -1,0 +1,134 @@
+:root {
+    --primary-color: #6366F1;
+    --accent-color: #3f83f8;
+    --text-color: #333333;
+    --link-color: #2563eb;
+    --background-color: #ffffff;
+    --light-gray: #f0f0f0;
+    --gray: #808080;
+    --dark-gray: #555;
+    --padding-inline-section: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-color);
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Utility Class */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    /* margin-inline: auto; */
+    padding-inline: var(--padding-inline-section);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.primary-button {
+    border: none;
+    border-radius: 0.375rem;
+    color: var(--background-color);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+    transform: all 0.1s;
+}
+
+/* Navbar */
+.header-content {
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.logo {
+    gap: 0.938rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.logo-icon {
+    height: 5.876rem;
+    width: 1.938rem;
+}
+
+.logo-text {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav {
+    gap: 1.5rem;
+    display: none;
+}
+
+.nav-link {
+    color: #718096;
+    font-size: 1.125rem;
+    font-weight: 600;
+    transform: color 0.1s;
+}
+
+.nav-link:hover {
+    color: var(--link-color);
+}
+
+.contact-button {
+    display: none;
+    background-color: var(--primary-color);
+}
+
+.contact-button:hover {
+    background-color: #5254f8;
+}
+
+.menu-button {
+    display: none;
+    border: none;
+    border-radius: 0.375rem;
+    background-color: var(--background-color);
+    font-size: 1rem;
+    padding: 0.5rem 0.9rem;
+    font-weight: 700;
+}
+
+.menu-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+/* <!-- Navbar End --> */
+
+@media screen and (min-width: 768px) {
+    .nav {
+        display: flex;
+    }
+
+    .contact-button {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu-button {
+        display: block;
+    }
+}
