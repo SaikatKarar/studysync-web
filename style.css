@@ -180,7 +180,7 @@ a {
     width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .nav {
         display: none;
     }
@@ -188,9 +188,7 @@ a {
     .menu-button {
         display: block;
     }
-}
 
-@media screen and (max-width: 768px) {
     .main-section {
         flex-direction: column;
     }
@@ -220,12 +218,12 @@ a {
     }
 }
 
-@media screen and (max-width: 992px) {
+@media (max-width: 992px) {
     .section-title {
-        /* font-size: 3vmax; */
+        font-size: 3vmax;
     }
 
-    /* .section-image{
+    .section-image {
         width: 100%;
-    } */
+    }
 }
